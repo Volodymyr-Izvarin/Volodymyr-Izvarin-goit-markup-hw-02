@@ -1,19 +1,31 @@
 /* 
 цвет основного текста #757575
 вторичный цвет текста #212121
+цвет акуента #2196F3
+цвет текста в футере rgba(255, 255, 255, 0.6)
 
 темно серый фон #2F303A;
 фон хедера #FFFFFF
 основной фон #E5E5E5
 вторичный фон #F5F4FA
-
-цвет акуента #2196F3
-цвет текста в футере rgba(255, 255, 255, 0.6)
 */
+
+:root {
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --third-text-color: #FFFFFF;
+    --accent-color: #2196F3;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+    
+    --primary-background-color: #E5E5E5;
+    --secondary-background-color: #F5F4FA;
+    --header-background-color: #FFFFFF;
+    --hero-background-color: #2F303A;
+}
  
 body {
-    background-color: #fff;
-    color: #757575;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
 }
 
 ul {
@@ -23,58 +35,58 @@ ul {
 /* Шапка сайта */
 
 .logo-part {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 /* site-nav */
 .site-nav .link{
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 /* hero */
 .hero {
-    background-color: #2F303A;
+    background-color: var(--hero-background-color);
 }
 .hero-title {
-    color: #fff;
+    color: var(--third-text-color);
 }
 .hero-button {
-    background: #2196F3;
-    color: #fff;
+    background: var(--accent-color);
+    color: var(--third-text-color);
 }
 
 /* sections */
 .section {
-    background-color: #fff;
+    background-color: var(--primary-background-color);
 }
 .section-title {
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 
 .our-team {
-    background-color: #F5F4FA;
+    background-color: var(--secondary-background-color);
 }
 
 /* footer */
 .footer {
-    background-color: #2F303A;
-    color: #fff;
+    background-color: var(--hero-background-color);
+    color: var(--third-text-color);
 }
 .logo-footer {
-    color: #fff;
+    color: var(--third-text-color);
 }
 .footer-auth-nav {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-text-color);
 }
 
 .button {
-    color: #212121;
-    background-color: #F5F4FA;
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-background-color);
 }
 .button:hover, .button:focus {
-    color: #fff;
-    background-color: #2196F3;
+    color: var(--third-text-color);
+    background-color: var(--accent-color);
 }
