@@ -1,3 +1,80 @@
-a {
-    text-decoration: none;
+/* 
+цвет основного текста #757575
+вторичный цвет текста #212121
+
+темно серый фон #2F303A;
+фон хедера #FFFFFF
+основной фон #E5E5E5
+вторичный фон #F5F4FA
+
+цвет акуента #2196F3
+цвет текста в футере rgba(255, 255, 255, 0.6)
+*/
+ 
+body {
+    background-color: #fff;
+    color: #757575;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Шапка сайта */
+
+.logo-part {
+    color: #2196F3;
+}
+/* site-nav */
+.site-nav .link{
+    color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: #2196F3;
+}
+
+/* hero */
+.hero {
+    background-color: #2F303A;
+}
+.hero-title {
+    color: #fff;
+}
+.hero-button {
+    background: #2196F3;
+    color: #fff;
+}
+
+/* sections */
+.section {
+    background-color: #fff;
+}
+.section-title {
+    color: #212121;
+}
+
+.our-team {
+    background-color: #F5F4FA;
+}
+
+/* footer */
+.footer {
+    background-color: #2F303A;
+    color: #fff;
+}
+.logo-footer {
+    color: #fff;
+}
+.footer-auth-nav {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.button {
+    color: #212121;
+    background-color: #F5F4FA;
+}
+.button:hover, .button:focus {
+    color: #fff;
+    background-color: #2196F3;
 }
