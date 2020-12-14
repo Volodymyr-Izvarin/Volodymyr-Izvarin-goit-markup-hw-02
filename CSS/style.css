@@ -8,6 +8,7 @@
 фон хедера #FFFFFF
 основной фон #E5E5E5
 вторичный фон #F5F4FA
+
 */
 
 :root {
@@ -26,6 +27,7 @@
 /* Вся странница */
 body {
     background: var(--primary-background-color);
+    letter-spacing: 0.03em;
 }
 li {
     list-style: none;
@@ -56,6 +58,7 @@ header {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .site-nav .link:hover, 
 .site-nav .link:focus {
@@ -70,7 +73,8 @@ header {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14; 
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
 }
 
 /* Странница "Стуия" */
@@ -78,6 +82,7 @@ header {
 /* Секция "Герой" */
 .hero {
     background: var(--hero-background-color);
+    letter-spacing: 0.06em;
 }
 .hero-title {
     color: var(--header-background-color);
@@ -179,6 +184,8 @@ header {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.06em;
+    
 }
 .portfolio-descript {
     columns: var(--primary-text-color);
